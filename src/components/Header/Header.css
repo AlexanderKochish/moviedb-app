@@ -1,0 +1,95 @@
+.header{
+    position: sticky;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(11, 11, 12), rgb(43, 43, 79));
+    box-shadow: 0 3px 6px rgba(0,0,0,0.20);
+    top: 0;
+    z-index: 99;
+}
+.header__logo{
+    display: flex;
+    padding-top: 10px;
+    margin: 0 400px 0 50px;
+    font-family: 'Lobster';
+    cursor: pointer;
+}
+input[type='text']{
+    padding: 10px 50px 10px 50px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(63, 62, 96),rgb(116, 116, 214));
+    margin: 10px 10px 10px 0;
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+}
+.btn__clear{
+    padding: 10px 50px 10px 50px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    margin: 10px 10px 10px 0;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(63, 62, 96),rgb(116, 116, 214));
+    cursor: pointer;
+}
+.btn__clear:hover{
+    background: rgb(183, 0, 0);
+    transition: background-color 0.4s ease-in-out;
+}
+@media (max-width: 1065px) {
+    .header__logo{
+        margin: 0 300px 0 50px;
+    }
+}
+@media (max-width: 965px) {
+    .header__logo{
+        margin: 0 200px 0 50px;  
+    }
+}
+@media (max-width: 865px) {
+    .header__logo{
+        margin: 0 100px 0 40px;
+    }
+}
+@media (max-width: 765px) {
+    .header__logo{
+        margin: 0 20px 0 30px; 
+    }
+}
+@media (max-width: 665px) {
+    .header__logo{
+        margin: 0 5px 0 10px; 
+    }
+    input[type='text']{
+        padding: 10px 15px 10px 15px;
+        margin: 10px 5px 5px 5px;
+        font-size: small;
+    }
+    .btn__clear{
+        padding: 10px 15px 10px 15px;
+        margin: 10px 5px 5px 5px;
+        font-size: small;
+    }
+}
+@media (max-width: 665px) {
+    .header__logo{
+        margin: 0 5px 0 5px; 
+    }
+    input[type='text']{
+        padding: 5px 10px 5px 10px;
+        margin: 10px 5px 5px 5px;
+        font-size: small;
+    }
+    .btn__clear{
+        padding: 5px 10px 5px 10px;
+        margin: 10px 5px 5px 5px;
+        font-size: small;
+    }
+}

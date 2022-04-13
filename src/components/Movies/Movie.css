@@ -1,0 +1,10 @@
+.movie__container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}   
+.movie__cards__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
